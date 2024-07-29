@@ -28,3 +28,40 @@
 .navbar button:hover {
     background-color: #1d4ed8; /* Darker shade on hover */
 }
+/* style.css */
+
+.project-card {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-card h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.project-card ul {
+    margin-top: 0.5rem;
+    list-style-type: disc; /* Ensure the list uses disc bullets */
+    padding-left: 1.5rem; /* Add padding for the bullets to be indented */
+}
+
+.project-card ul li {
+    margin-bottom: 0.5rem;
+}
