@@ -1,4 +1,9 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Message sent! Thank you for contacting me.');
-});
+// Replace with your actual email
+const email = config.email;
+const resumeLink = config.resumeLink;
+document.getElementById("email-contact").innerText = email;
+document.getElementById("footer-email").innerText = email;
+
+function downloadResume() {
+  window.open(resumeLink, "_blank");
+}

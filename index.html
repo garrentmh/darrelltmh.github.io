@@ -8,26 +8,31 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-gray-100 text-gray-800">
-    <header class="bg-blue-600 p-6 text-white text-center">
+    <header class="bg-gray-900 p-6 text-white text-center">
       <div class="container mx-auto flex justify-between items-center">
         <div class="text-left">
           <h1 class="text-3xl font-bold">Darrell Tan Ming Hup</h1>
           <p>Software Engineer Specializing in Backend Development</p>
-          <p>darrelltmh@gmail.com | +6012-593 9978</p>
+          <p id="email-contact"></p>
+          <p>+6012-593 9978</p>
         </div>
-        <nav>
+        <nav class="navbar">
           <ul class="flex space-x-4">
-            <li><a href="#home" class="hover:underline">Home</a></li>
-            <li><a href="#about" class="hover:underline">About</a></li>
-            <li><a href="#projects" class="hover:underline">Projects</a></li>
-            <li><a href="#skills" class="hover:underline">Skills</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li>
-              <a href="#employment" class="hover:underline">Employment</a>
+              <button onclick="downloadResume()" class="font-bold">
+                Download Resume
+              </button>
             </li>
-            <li><a href="#education" class="hover:underline">Education</a></li>
-            <li><a href="#contact" class="hover:underline">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -45,39 +50,6 @@
           dedicated to leveraging technology to enhance user experience and
           streamline internal processes.
         </p>
-      </section>
-
-      <section id="projects" class="my-6">
-        <h2 class="text-2xl font-bold mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-white p-4 shadow rounded">
-            <h3 class="text-xl font-bold mb-2">Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
-            </p>
-            <ul class="list-disc list-inside">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-            </ul>
-            <a href="#" class="text-blue-600">Learn more</a>
-          </div>
-          <div class="bg-white p-4 shadow rounded">
-            <h3 class="text-xl font-bold mb-2">Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
-            </p>
-            <ul class="list-disc list-inside">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-            </ul>
-            <a href="#" class="text-blue-600">Learn more</a>
-          </div>
-          <!-- Add more project cards as needed -->
-        </div>
       </section>
 
       <section id="skills" class="my-6">
@@ -309,6 +281,39 @@
         </ul>
       </section>
 
+      <section id="projects" class="my-6">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-4 shadow rounded">
+            <h3 class="text-xl font-bold mb-2">Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <ul class="list-disc list-inside">
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+            <a href="#" class="text-blue-600">Learn more</a>
+          </div>
+          <div class="bg-white p-4 shadow rounded">
+            <h3 class="text-xl font-bold mb-2">Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+            <ul class="list-disc list-inside">
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+            <a href="#" class="text-blue-600">Learn more</a>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+
       <section id="contact" class="my-6">
         <h2 class="text-2xl font-bold mb-4">Contact</h2>
         <form
@@ -362,7 +367,7 @@
     </main>
 
     <footer class="bg-gray-900 text-white p-6">
-      <div class="container mx-auto flex justify-between">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <h3 class="text-xl font-bold mb-2">About Me</h3>
           <p>
@@ -374,23 +379,20 @@
         </div>
         <div>
           <h3 class="text-xl font-bold mb-2">Contact Me</h3>
-          <p>darrelltmh@gmail.com</p>
+          <p id="footer-email"></p>
           <p>+6012-593 9978</p>
           <p>Location: Malaysia</p>
         </div>
         <div>
           <h3 class="text-xl font-bold mb-2">Social Media</h3>
-          <ul class="list-none">
-            <li>
-              <a
-                href="www.linkedin.com/in/darrell-tan-535467134"
-                class="hover:underline"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+          <a href="https://www.linkedin.com/in/darrelltmh/">
+            <img src="images/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+          </a>
         </div>
       </div>
     </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

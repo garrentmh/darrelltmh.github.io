@@ -1,0 +1,30 @@
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0;
+}
+
+.navbar a, .navbar button {
+    color: white;
+    padding: 10px 15px; /* Adding padding for better spacing */
+    transition: color 0.3s ease;
+    text-align: center; /* Ensure text is centered */
+}
+
+.navbar button {
+    background-color: #2563eb; /* A darker shade of blue for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a modern look */
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #1d4ed8; /* Darker shade on hover */
+}
